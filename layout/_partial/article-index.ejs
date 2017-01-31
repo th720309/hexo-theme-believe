@@ -1,0 +1,33 @@
+<div class="container">
+  <article class="post">
+    <h1 class="entry-title">
+      <a href="<%- config.root %><%- item.path %>" rel="bookmark">
+        <%- item.title || theme.default_post_title || "Untitled" %>  
+      </a>
+    </h1>
+    <% if (item.excerpt){ %>
+    <div class="entry-content">
+      <p>
+        <%- item.excerpt %>
+      </p>
+    </div>
+    <div class="post-more-link text-center">
+            <a class="btn" href="<%- config.root %><%- item.path %>" rel="contents">
+              阅读全文 »
+            </a>
+    </div>
+    <p class="posted-on">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+    	<%= item.date.format(config.date_format) %>
+    </p>
+    <div class="tags-links">
+      <i class="fa fa-tags" aria-hidden="true"></i>
+      <% item.tags.each(function(tag){ %>
+      <a href="<%= config.root %>tags/<%= tag.name %>/" rel="tag">
+        <%- tag.name %>
+      </a>
+      <% }); %>
+    </div>
+    <% } %>
+  </article>
+</div>

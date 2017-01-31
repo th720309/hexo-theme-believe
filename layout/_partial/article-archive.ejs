@@ -1,0 +1,10 @@
+<% posts.forEach(function(item) { %>
+  <li>
+    <span class="date">
+      <%= item.date.format(config.date_format) %>
+    </span>
+    <a href="<%- config.root %><%- item.path %>" class="title">
+      <%- item.title || theme.default_post_title || "Untitled" %>
+    </a>
+  </li>
+<% }); %>

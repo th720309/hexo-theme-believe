@@ -1,0 +1,63 @@
+.post {
+    padding: 0px 20px 30px;
+    box-shadow: 5px 5px 25px #dadada;
+  .nav-links {
+    a {
+      text-decoration: none;
+      color: #3a3a3a;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+      font-size: 0.750em;
+    }
+    .meta-arraw {
+      opacity: 0.8;
+    }
+    .nav-previous {
+      position: fixed;
+      bottom: 64px;
+      left: 50px;
+      z-index: 29;
+    }
+    .nav-next {
+      position: fixed;
+      bottom: 64px;
+      right: 50px;
+      z-index: 29;
+    }
+  }
+}
+.entry-content {
+  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+  line-height: 1.7;
+  word-wrap: break-word;
+  ol,
+  ul {
+    margin: 0 0 1.5em 3em;
+  }
+  ul {
+    list-style: disc;
+  }
+  blockquote {
+    color: #aaa;
+    margin: 1em 0;
+    padding: 0 0 0 30px;
+    border-left: 4px solid #aaa;
+  }
+  p img {
+    display: block;
+    margin: 0 auto;
+  }
+  a:link {
+    color: #3769c9;
+  }
+  a:visited {
+    color: #3769c9;
+  }
+  a:active,
+  a:focus,
+  a:hover {
+    color: #3769c9;
+    opacity: 0.8;
+  }
+}

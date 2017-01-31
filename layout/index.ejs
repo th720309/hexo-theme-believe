@@ -1,0 +1,11 @@
+<div class="site-content home">
+  <main class="content-area">
+    <% page.posts.each(function(item, itemIndex){ %>
+        <div class="article">
+          <%- partial('_partial/article-index', {item: item}) %>
+        </div> 
+    <% }); %>
+
+    <%- partial('_partial/pagination') %>
+  </main>
+</div>

@@ -1,0 +1,50 @@
+<div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            <%- page.title || theme.default_post_title || "Untitled" %>
+            <% if (page.subtitle && page.subtitle.length) { %>
+              <p><%- page.subtitle %></p>
+            <% } %>
+          </h1>
+         
+        </div>
+         <p class="a-posted-on">
+          <%= page.date.format(config.date_format) %>
+          </p>
+        <!-- Post Main Content -->
+        <div class="entry-content">
+          <%- page.content %>
+        </div>
+      </article>
+    </div>
+    <!-- Pre or Next -->
+    <% if (page.prev || page.next){ %>
+	<div class="container" >
+           <ul class="pager">
+    	     <% if (page.prev){ %>
+      	     <li class="previous">
+              <a href="<%- config.root %><%- page.prev.path %>" rel="prev">下一篇</a>
+             </li>
+           <% } %>
+           <% if (page.next){ %>
+              <li class="next">
+              <a href="<%- config.root %><%- page.next.path %>" rel="prev">上一篇</a>
+            </li>
+           <% } %>
+          </ul>
+       </div>
+　　　　<!-- Comments -->
+    <div class="container">
+      <%- partial('_partial/comment', {
+          shortname: theme.duoshuo_shortname
+        }) %>
+    </div>
+   <% } %>
+　　　　
+  </div>
+</div>

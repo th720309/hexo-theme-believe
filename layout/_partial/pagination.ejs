@@ -1,0 +1,20 @@
+<% if (page.prev || page.next){ %>
+<div class="container" >
+  <ul class="pager">
+    <% if (page.prev){ %>
+      <li class="previous">
+        <a href="<%- config.root %><%- page.prev_link %>">
+          下一页
+        </a>
+      </li>
+    <% } %>
+    <% if (page.next){ %>
+      <li class="next">
+        <a href="<%- config.root %><%- page.next_link %>">
+          上一页
+        </a>
+      </li>
+    <% } %>
+  </ul>
+</div>
+<% } %>

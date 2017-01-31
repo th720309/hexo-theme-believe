@@ -1,0 +1,40 @@
+<header class="site-header">
+  <div class="header-inside">
+    
+    <div class="logo">
+      <a href="<%= url_for() %>" rel="home">
+        <% if (config.logo || theme.logo) { %>
+        <img src="<%- config.logo || theme.logo %>" alt="<%- config.title %>" height="60">
+        <% } %>
+      </a>
+    </div>
+    <a class="header-name" href="<%= url_for() %>">
+            <span><%- config.title %></span>
+            的部落宅
+        </a>
+    <!-- navbar -->
+    <nav class="navbar">
+      <!--  nav links -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          <% var site_navs = config.nav || theme.nav  %>
+          <% for (var i in site_navs){ %>
+            <li>
+              <a href="<%- site_navs[i].url ? url_for(site_navs[i].url) : url_for(site_navs[i]) %>">
+                <% if (site_navs[i].icon) { %>
+                  <i class="fa fa-<%= site_navs[i].icon %> fa-stack-2x"></i>
+                <% } else { %>
+                  <%= i %>
+                <% } %>
+              </a>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
