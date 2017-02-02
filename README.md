@@ -1,7 +1,7 @@
 # hexo-theme-believe
 
+这个主题取名believe.希望选用这个主题的人永远相信美好的事情即将发生。
 
-A simple theme for Hexo named believe. :point_right: [Demo](http://www.tianhao.site/blog) :point_left:
 
 ## ScreenShot
 ![Daily](http://oct3pmpde.bkt.clouddn.com/fengmian.jpg)
