@@ -1,4 +1,4 @@
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 767px) {
   .content-area {
     padding-top: 0px;
   }
