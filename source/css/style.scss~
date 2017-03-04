@@ -1,6 +1,6 @@
 @import './normalize';
 @import './variables';
-@import './believe';
+@import './daily';
 @import './nav';
 @import './post';
 @import './highlight';
