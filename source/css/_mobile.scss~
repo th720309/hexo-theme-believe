@@ -1,6 +1,6 @@
 @media screen and (max-width: 1140px) {
   .content-area {
-    padding: 0px;
+    padding-top: 0px;
   }
   .logo a img {
     height: 36px;
