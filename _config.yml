@@ -1,5 +1,5 @@
 # basic
-title: Daily
+title: th是个小屁孩的技术小屋
 subtitle: 笔直向前，说到做到
 favicon: /favicon.ico
 
@@ -7,15 +7,15 @@ favicon: /favicon.ico
 logo: http://oct3pmpde.bkt.clouddn.com/timg.jpg
 
 # duoshuo-comment
-#duoshuo_shortname: 
+duoshuo_shortname: 
 
 highlight:
   enable: true
-  line_number: false
+  line_number: true
   auto_detect: false
   tab_replace:
 
-# nav (icon from fontawesome.io)#
+# nav #
 nav:
   - id: 首页
     url: .
@@ -26,15 +26,58 @@ nav:
   - id: 关于
     url: about
     icon: user
-  - id: 项目
-    url: project
-    icon: folder-open
+  - id: 相册
+    url: photo
+    icon: photo
+  - id: 留言
+    url: guestbook
+    icon: edit
   - id: RSS
     url: atom.xml
     icon: send
 
+# cover
+cover_img: http://oct3pmpde.bkt.clouddn.com/back.jpg
+cover_avator: http://oct3pmpde.bkt.clouddn.com/avator.jpg
+cover_info: 欢迎来到我的博客</br>by:th是个小屁孩
+
+# photo
+photo:
+  - title: 上海·外滩
+    url: http://oct3pmpde.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160911111234_Snapseed_meitu_3.jpg
+  - title: 上海·城隍庙
+    url: http://oct3pmpde.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160911105703_Snapseed_meitu_4.jpg
+  - title: 上海·外滩
+    url: http://oct3pmpde.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160911112212_Snapseed_meitu_2.jpg
+  - title: 上海·城隍庙
+    url: http://oct3pmpde.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160911105720_Snapseed_meitu_1.jpg
+  - title: 谢霆锋
+    url: http://oct3pmpde.bkt.clouddn.com/23432.jpg
+  - title: 朱茵
+    url: http://oct3pmpde.bkt.clouddn.com/278f3ec3472f45aca025d6b7f1048ce8fda727217c64-tJA5fE_fw658_meitu_2.jpg
+  - title: 萌
+    url: http://oct3pmpde.bkt.clouddn.com/93a3663ce5a120df2187d88dee6b611e4d6bb0fd890e-Ayk04S_fw658_meitu_5.jpg
+  - title: 谢霆锋
+    url: http://oct3pmpde.bkt.clouddn.com/234.jpg
+  - title: 新垣结衣
+    url: http://oct3pmpde.bkt.clouddn.com/5406bfb524dedd8d8d583f851de02a6f954b8cb63a313-KkBPG0_fw658_meitu_5.jpg
+  - title: 萌
+    url: http://oct3pmpde.bkt.clouddn.com/img3_meitu_8.jpg
+  - title: 萌
+    url: http://oct3pmpde.bkt.clouddn.com/1be693d8c060f36425ff18c2c6bd74297e124115481ef-ORfbts_fw658_meitu_4.jpg
+  - title: 新垣结衣
+    url: http://oct3pmpde.bkt.clouddn.com/efffa4c7e22d967269410e4ee5a8a22f963840312e32c-0Xv1LH_fw658_meitu_6.jpg
+  - title: 旅行
+    url: http://oct3pmpde.bkt.clouddn.com/9a75825d20a21a59472d7f17f758682c82fcadd025169-D9G2Hv_fw658_meitu_11.jpg
+  - title: 萌
+    url: http://oct3pmpde.bkt.clouddn.com/15307563afb5f071d66161bf7cdbdb496ea5674814c5f-GKX9ys_fw658_meitu_3.jpg
+  - title: 无脸男
+    url: http://oct3pmpde.bkt.clouddn.com/ad01a45561cee108d12f25f09930c80f2f2a91238510-Ys0wNX_fw658_meitu_1.jpg
+  - title: PC
+    url: http://oct3pmpde.bkt.clouddn.com/61dd6485c9202285fc763bda7e79dbe389883401bed7b-wspi2M_fw658_meitu_7.jpg
+
 # baiduanalysis
-#baiduanalysis: 
+baiduanalysis: 
 
 # hexo-renderer-sass
 node_sass:
@@ -52,4 +95,4 @@ social:
   twitter: https://twitter.com
   facebook: https://facebook.com
 
-footer: Powered by <a href="https://hexo.io/">Hexo</a> with Theme <a href="http://www.tianhao.site/blog">believe</a>
+footer: th是个小屁孩的技术小屋

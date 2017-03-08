@@ -1,4 +1,29 @@
 <div class="site-content home">
+      <div class="content-header" style="background: url(<%- theme.cover_img %>) no-repeat bottom;">
+        <div class="headline">
+            <a href="#" class="demo">
+                <div class="img" style="background-image:url(<%- theme.cover_avator %>)"></div>
+                <div class="cover_mask">
+                    <div class="info">
+                        <span><%- theme.cover_info %></span>
+                    </div>
+                </div>
+                <div class="border"></div>
+            </a>
+            <h1 id="Hotnews"></h1>
+            <div class="header-link">
+              <% if (config.social) { %>
+                <% _.forIn(config.social, function(val, key){ %>
+                  <a href="<%- val %>" class="icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
+                <% }) %>
+              <% } else { %>
+                <% _.forIn(theme.social, function(val, key){ %>
+                  <a href="<%- val %>" class="icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
+                <% }) %>
+              <% } %>
+            </div>
+        </div>
+    </div>
   <main class="content-area">
     <% page.posts.each(function(item, itemIndex){ %>
         <div class="article">
@@ -8,4 +33,15 @@
 
     <%- partial('_partial/pagination') %>
   </main>
+<script type="application/javascript">
+     var content = "永远相信美好的事情即将发生";
+     var i = 0;
+     function show(){
+        var str  = content.substr(0,i);
+        Hotnews.innerHTML = str + "_";
+        i++;
+        if (i>content.length) i=0;
+        setTimeout("show()",600);
+     }
+</script>
 </div>

@@ -1,0 +1,309 @@
+<style>
+
+#container {
+    margin: auto;
+    max-width: 1280px;
+    margin-top: 5em;
+    margin-bottom: 60px;
+    animation: cont 0.3s;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 20px 0px 15px 0px;
+    clear: both;
+}
+.about-me .counts, .about-me .profile {
+    border-bottom: 1px solid #eee;
+    margin: 0 0 3%;
+    padding: 0 0 3%;
+    text-align: center;
+}
+.about-me .avatar-450 {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border-radius: 100%;
+    border: 3px solid #F2F5F7;
+}
+.avatar-450 {
+    width: 30%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 100%;
+}
+.about-me .about-avatar, .about-me .info {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 0;
+    margin-top: -15px;
+}
+.about-me .info {
+    width: 30%;
+    padding-left: 15px;
+}
+.about-me .info h1 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #333;
+    word-break: break-all;
+}
+.about-me .info h1, .about-me p {
+    color: rgba(0,0,0,.6);
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.prandom ul{
+    overflow: hidden;
+    text-align: center;
+}
+.post-random .photo {
+    margin: 5px;
+    width: 23%;
+    display: inline-block;
+    line-height: 0;
+}
+.photo_shows {
+    position: relative;
+    margin-bottom: 2rem;
+}
+.photo_shows a .mask {
+    position: absolute;
+    font-size: 20px;
+    top: 30%;
+    bottom: 60%;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    padding-top: 7em;
+    margin: auto;
+    color: transparent;
+    background: 0 0;
+    opacity: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.photo_shows img {
+    width: 100%;
+    height: 100%;
+}
+.photo_shows a:hover .mask {
+    top: 0px;
+    bottom: 0px;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.65098);
+}
+#imgbox-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+    z-index: 90;
+}
+
+#imgbox-loading div {
+    background: #FFF;
+    width: 100%;
+    height : 100%;
+}
+
+#imgbox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: none;
+    z-index: 80;
+}
+
+.imgbox-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #FFF;
+    display: none;
+    z-index: 90;
+}
+
+.imgbox-img {
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.imgbox-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    outline: none;
+}
+
+.imgbox-title {
+    padding-top: 10px;
+    font-size: 11px;
+    text-align: center;
+    font-family: Arial;
+    color: #333;
+    display: none;
+}
+
+.imgbox-bg-wrap {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.imgbox-bg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.imgbox-bg-n {
+    left: 0;
+    top: -20px;
+    width: 100%;
+}
+
+.imgbox-bg-ne {
+    right: -20px;
+    top: -20px;
+}
+
+.imgbox-bg-e {
+    right: -20px;
+    top: 0;
+    height: 100%;
+}
+
+.imgbox-bg-se {
+    right: -20px;
+    bottom: -20px;
+}
+
+.imgbox-bg-s {
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+}
+
+.imgbox-bg-sw {
+    left: -20px;
+    bottom: -20px;
+}
+
+.imgbox-bg-w {
+    left: -20px;
+    top: 0;
+    height: 100%;
+}
+
+.imgbox-bg-nw {
+    left: -20px;
+    top: -20px;
+}
+@media all and (max-width:1440px){
+    #container{max-width:1100px}
+    .post-random .photo {width: 23%;}
+}
+@media (max-width: 999px) {
+    #container {
+        width: 95%;
+        margin-top: 2em;
+    }
+}
+@media (max-width: 720px) {
+    #container {
+        box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 0px 0px, rgba(0, 0, 0, 0.298039) 0px 0px 0px 0px;
+        width: 94%;
+        margin: 10px auto auto -3px;
+        padding: 15px;
+
+    }
+    .post-random {
+        width: 100%;
+    }
+    .post-random .photo {
+        width: 32%;
+        display: inline-block;
+        box-sizing: border-box;
+        border-radius: 3px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.0470588);
+        border-image: initial;
+        margin: 0px;
+    }
+
+    .post-random .photo-item {
+        height: 100%;
+        background-size: cover;
+    }
+    .photo_shows a .mask {
+        padding-top: 50%;
+        font-size: 15px;
+    }
+}
+@media (max-width: 540px) {
+    .prandom {
+        margin: auto;
+        width: 114%;
+        margin-left: -20px;
+    }
+    .post-random {
+        width: 100%;
+    }
+    .post-random .photo {
+        border-radius: 3px;
+        border: 1px solid rgba(0,0,0,.05);
+        margin-bottom: 0;
+        width: 32%;
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 0px;
+    }
+}
+</style>
+<div id="container">
+    <div class="about-me about_mob" style="display: inherit;">
+        <div class="profile">
+            <img alt="" src="<%- theme.cover_avator %>"  class="avatar avatar-450 photo" height="450" width="450">
+            <div class="info aboutinfo">
+                <h1><span><%- config.title %></span>的相册薄</h1>
+                <p>永远相信</p>
+                <p>美好的事情即将发生</p>
+            </div>
+        </div>
+    </div>
+    <div class="prandom">
+        <div class="post-random"><ul class="js-photos"><ul>
+            <% var site_photos = theme.photo %>
+            <% for (var i in site_photos){ %>
+                <li class="photo photo_shows">
+                   <a class="photo-item" href="<%- site_photos[i].url %>" target="_blank">
+                      <div class="mask transition3"><%- site_photos[i].title %></div>
+                      <img src="<%- site_photos[i].url %>">
+                   </a>
+                </li>
+            <% } %>
+        </ul>
+        </ul></div></div>
+</div>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.imgbox.pack.js"></script>
+<script type="text/javascript">
+    $("a.photo-item").imgbox({'alignment':'center','zoomOpacity': true,'speedIn':0});
+</script>
