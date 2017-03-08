@@ -1,5 +1,7 @@
 # hexo-theme-believe
 
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/th720309/hexo-theme-believe)
+[![Packagist](https://img.shields.io/badge/hexo--theme--believe-version2.0-red.svg)](https://github.com/th720309/hexo-theme-believe)
 
 这个主题取名believe.希望选用这个主题的人永远相信美好的事情即将发生。
 A simple theme for Hexo named believe. :point_right: [Demo](http://www.tianhao.site/blog) :point_left:
