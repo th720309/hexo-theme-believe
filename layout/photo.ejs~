@@ -302,8 +302,8 @@
         </ul>
         </ul></div></div>
 </div>
-<script type="text/javascript" src="http://oct3pmpde.bkt.clouddn.com/jquery.min.js"></script>
-<script type="text/javascript" src="http://oct3pmpde.bkt.clouddn.com/jquery.imgbox.pack.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.imgbox.pack.js"></script>
 <script type="text/javascript">
     $("a.photo-item").imgbox({'alignment':'center','zoomOpacity': true,'speedIn':0});
 </script>
