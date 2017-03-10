@@ -11,18 +11,6 @@
                 <div class="border"></div>
             </a>
             <h1 id="Hotnews"></h1>
-            <script type="application/javascript">
-               var content = "永远相信美好的事情即将发生";
-               var i = 0;
-               function show(){
-                   var str  = content.substr(0,i);
-                   Hotnews.innerHTML = str + "_";
-                   i++;
-                   if (i>content.length) i=0;
-                   setTimeout("show()",600);
-               }
-               window.onload = show();
-               </script>
             <div class="header-link">
               <% if (config.social) { %>
                 <% _.forIn(config.social, function(val, key){ %>
@@ -45,5 +33,15 @@
 
     <%- partial('_partial/pagination') %>
   </main>
-
+<script type="application/javascript">
+     var content = "永远相信美好的事情即将发生";
+     var i = 0;
+     function show(){
+        var str  = content.substr(0,i);
+        Hotnews.innerHTML = str + "_";
+        i++;
+        if (i>content.length) i=0;
+        setTimeout("show()",600);
+     }
+</script>
 </div>
