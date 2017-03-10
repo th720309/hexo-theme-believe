@@ -6,6 +6,11 @@
 这个主题取名believe.希望选用这个主题的人永远相信美好的事情即将发生。
 A simple theme for Hexo named believe. :point_right: [Demo](http://www.tianhao.site/blog) :point_left:
 
+## Version 2.1
+
+ 1. **加入不蒜子统计**
+ 2. **add 项目页**
+
 ## Version 2.0 
 
  1. **add cover-header**
@@ -94,6 +99,20 @@ photo:
   - title: 
     url: 
  
+ # project #
+project:
+  - title: demo1
+    url: https://github.com/th720309/hexo-theme-believe
+    sub: 第一个demo
+    language: css
+  - title: demo2
+    url: https://github.com/th720309/hexo-theme-believe
+    sub: 第二个demo
+    language: css
+  - title: demo3
+    url: https://github.com/th720309/hexo-theme-believe
+    sub: 第三个demo
+    language: css
 
 # hexo-renderer-sass
 node_sass:
@@ -160,7 +179,7 @@ How to customize page footer?
 ----------
 
 
-## 相册页 ##
+## 相册页和项目页 ##
 
   找到hexo文件夹，找到source文件夹，添加文件夹命名为photo，文件夹内添加index.md文件，index.md文件内输入
 
@@ -173,7 +192,19 @@ How to customize page footer?
         ---         
 
 　　编辑config.yml内的photo,对应照片的title和url.
+  
+  同理，项目页的创建要找到hexo文件夹，找到source文件夹，添加文件夹命名为project，文件夹内添加index.md文件，index.md文件内输入
 
+
+        ---
+        layout: project
+        title: 项目
+        date: 2017-03-10 09:40:04
+        type: "project"
+        ---    
+
+   编辑config.yml内的project,对应项目的title和url与sub,language.
+   
 ----------
 ## 留言和关于页 ##
 
