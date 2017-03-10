@@ -26,9 +26,6 @@ nav:
   - id: 关于
     url: about
     icon: user
-  - id: 项目
-    url: project
-    icon: folder-open
   - id: 相册
     url: photo
     icon: photo
