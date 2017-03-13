@@ -239,3 +239,37 @@ CSDN : [点击进入我的CSDN](http://blog.csdn.net/u013775952)
 
 
 ----------
+```
+---
+---
+layout: post
+title: guestbook
+date: 2016-09-01 18:20:36
+type: guestbook
+---
+## **我是个程序员，一天我坐在路边一边喝水一边苦苦检查程序。 这时一个乞丐在我边上坐下了，开始要饭，我觉得可怜，就给了他1块钱。 然后接着调试程序。他可能生意不好，就无聊的看看我在干什么，然后过了一会，他缓缓地指着我的屏幕说，这里少了个分号。**
+<br/>
+<br/>
+<blockquote class="blockquote-center">念念不忘，必有回响</blockquote>
+<br/>
+>最近访客
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"<%= theme.duoshuo_shortname %>"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<div class="ds-recent-visitors" data-num-items="38" data-avatar-size="42" id="ds-recent-visitors"></div>
+
+<div class="ds-thread" data-thread-key="<%= page.layout %>-<%= page.slug %>" data-title="<%= page.title %>" data-url="<%= page.permalink %>"></div>
+<br/>
+<br/>
+```
+
+
+----------
